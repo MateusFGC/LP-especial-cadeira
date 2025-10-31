@@ -295,7 +295,6 @@ footer .container{
  /* Hover da lista */
  a {
     overflow: hidden;
-
     border-radius: 10px;
     /* Borda arredondada, opcional */
   }
@@ -308,7 +307,10 @@ footer .container{
 
   a:hover img {
     transform: translate(0%, 2%) scale(1.09); /* Aumenta o zoom */
-
+    transition: 0.5s;
+  }
+  .produto:hover h3{
+    color: var(--title);
     transition: 0.5s;
   }
   /* Hover */
