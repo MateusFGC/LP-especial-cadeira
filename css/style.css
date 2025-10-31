@@ -1,10 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 
+:root {
+
+  --main-yellow: #f2b910;
+  --secondary-yellow: #dea602;
+
+  --white: #fff;
+  --black: #000;
+  --title: #333;
+
+  --background-dark-gray: #353535;
+  --background-medium-gray: #454545;
+  --background-light-gray:#cfcfcf;
+  --border-gray: #576069;
+}
 
 body {
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -18,7 +32,7 @@ body h3,
 body h4 {
     font-family: "Orbitron", sans-serif;
     line-height: 1;
-    color: #333;
+    color:var(--title);
 }
 
 .container {
@@ -69,7 +83,7 @@ h1{
 }
 
 p{
-    color: #000;
+    color:var(--black);
 }
 
 .infos{
@@ -81,8 +95,8 @@ p{
 }
 
 p.categoria{
-    background: #dea602;
-    color: #fff;
+    background:var(--secondary-yellow);
+    color: var(--white);
     text-transform: uppercase;
     font-size: 1rem;
     padding: 10px;
@@ -91,7 +105,7 @@ p.categoria{
 }
 
 section .container h2{
-    color: #fff;
+    color: var(--white);
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -118,7 +132,7 @@ main .foto{
 
 #bloco2::after{
     content: "";
-    background: #f2b910;
+    background: var(--main-yellow);
     width: 60px;
     height: 30px;
     position: absolute;
@@ -127,7 +141,7 @@ main .foto{
 }
 
 #bloco2 .container{
-    background: #353535;
+    background:var(--background-dark-gray);
     padding: 0;
 }
 
@@ -136,18 +150,18 @@ main .foto{
 }
 
 #bloco2 h2{
-    border-left: solid 5px #f2b910;
+    border-left: solid 5px var(--main-yellow);
     padding-left: 10px;
 }
 
 #bloco2 p{
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
     line-height: 1.2;
 }
 
 #bloco3{
-    background: #454545;
+    background:var(--background-medium-gray);
 
 }
 
@@ -162,19 +176,19 @@ main .foto{
 }
 
 #bloco3 h2{
-    border-left: solid 5px #f2b910;
+    border-left: solid 5px var(--main-yellow);
     padding-left: 10px;
 }
 
 #bloco3 p{
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
     line-height: 1.2;
     max-width: 500px;
 }
 
 #bloco4{
-    background: #cfcfcf;
+    background:var( --background-light-gray);
     text-align: left;
 }
 
@@ -184,8 +198,8 @@ main .foto{
 }
 
 #bloco4 h2{
-    color: #000;
-    border-left: solid 5px #f2b910;
+    color:var(--black);
+    border-left: solid 5px var(--main-yellow);
     padding-left: 10px;
 }
 
@@ -225,19 +239,19 @@ main .foto{
 }
 
 #bloco5 h2{
-    border-left: solid 5px #f2b910;
+    border-left: solid 5px var(--main-yellow);
     padding-left: 10px;
-    color: #000;
+    color:var(--black);
 }
 
 #bloco5 p{
-    color: #000;
+    color:var(--black);
     font-size: 1.2rem;
     line-height: 1.2;
 }
 
 footer{
-    background: #fff;
+    background: var(--white);
 }
 
 footer .container{
@@ -253,7 +267,7 @@ footer .container{
 }
 
 #comparativo p{
-    color: #000;
+    color:var(--black);
 }
 
 #comparativo .container{
@@ -304,8 +318,8 @@ footer .container{
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    background: #f2b910;
-    color: #fff;
+    background: var(--main-yellow);
+    color: var(--white);
     padding: 10px;
     user-select: none;
 }
@@ -323,7 +337,7 @@ footer .container{
     text-align: left;
     padding:0 20px 10px;
     margin-bottom: 0;
-    border-bottom: solid 1px #576069;
+    border-bottom: solid 1px var(--border-gray);
     line-height: 1;
     text-wrap: balance;
     min-height: 35px;
@@ -373,7 +387,7 @@ footer .container{
     #bloco3 h2, #bloco2 h2{
         border-left: none;
         padding: 20px 0 0;
-        border-top: solid 5px #f2b910;
+        border-top: solid 5px var(--main-yellow);
     }
 
     #bloco6 .container{
